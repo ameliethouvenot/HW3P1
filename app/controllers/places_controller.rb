@@ -7,15 +7,18 @@ class PlacesController < ApplicationController
   def show
   @place = Place.find_by({"id"=> params["id"]})  
   #@entries = Entry.where({"place_id" => @places["id"]})
-  
   end
 
-  #def create
+  def new 
+  
+  end 
 
-   # @place = Place.new
-   # @place["name"] = params["name"]
-   # @place.save
-   # redirect_to "/places"
-   # end
+  def create
+
+   @place = Place.new
+   @place["name"] = params["name"]
+   @place.save
+   redirect_to "/places"
+   end
 
 end
