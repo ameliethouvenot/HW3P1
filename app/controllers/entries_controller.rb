@@ -6,12 +6,12 @@ def show
 end 
 
 def new 
-@place = Place.find_by({ "id" => params["place_id"] })
+#@place = Place.find_by({ "id" => params["place_id"] })
 @entry = Entry.new 
+@entry.place_id = params["place_id"]
 end 
 
 def create 
-
   @entry = Entry.new
   @entry["title"] = params["title"]
   @entry["description"] = params["description"]
