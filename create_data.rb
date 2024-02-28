@@ -24,22 +24,22 @@ Entry.destroy_all
 
 tacos = Entry.new
 tacos["title"] = "Ate tacos"
-tacos["description"] = "Add details"
-tacos["posted_on"] = "Add date details"
+tacos["description"] = "Add fantastic details"
+tacos["posted_on"] = "2022-01-01"
 tacos["place_id"] = cdmx.id
 tacos.save
 
 wedding = Entry.new
 wedding["title"] = "Lisa and Jim's wedding"
-wedding["description"] = "Add details"
-wedding["posted_on"] = "Add date details"
+wedding["description"] = "Add awesome details"
+wedding["posted_on"] = "2022-01-01"
 wedding["place_id"] = cdmx.id
 wedding.save
 
 tacosagain = Entry.new
 tacosagain["title"] = "Ate tacos again"
-tacosagain["description"] = "Add details"
-tacosagain["posted_on"] = "Add date details"
+tacosagain["description"] = "Add incredible details"
+tacosagain["posted_on"] = "2022-01-01"
 tacosagain["place_id"] = cdmx.id
 tacosagain.save
 
